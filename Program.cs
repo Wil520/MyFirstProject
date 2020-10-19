@@ -9,7 +9,7 @@ namespace MyFirstProject
             //Console.WriteLine("Hello World!");
             int sum = Unit2Quiz2.SumBetween(7, 12);
             Console.WriteLine("Sum is: " + sum);
-            string myStr = "Hello World";
+            string myStr = "Hello World HELLO WORLD";
             myStr = Unit2Quiz2.RemoveVowels(myStr);
             Console.WriteLine("myStr without vowels: " + myStr);
             Unit2Quiz2.Func();

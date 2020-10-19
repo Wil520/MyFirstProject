@@ -7,8 +7,10 @@ namespace MyFirstProject
     {
         public static int SumBetween(int start, int end)
         {
+            int min = Math.Min(start,end);
+            int max = Math.Max(start,end);
             int sum = 0;
-            for (int i = start; i <= end; i++)
+            for (int i = min; i <= max; i++)
             {
                 sum += i;
 
@@ -19,7 +21,7 @@ namespace MyFirstProject
         public static string RemoveVowels(string str)
         {
             string result = "";
-            string vowels = "aeiou";
+            string vowels = "aeiouAEIOU";
             for (int i = 0; i < str.Length; i++)
             {
                 if (vowels.IndexOf(str[i]) == -1)
